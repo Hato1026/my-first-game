@@ -16,10 +16,13 @@ while enemy_hp > 0 and player_hp > 0:
         print("スライムのHP: " + str(enemy_hp))
 
         if enemy_hp > 0:
-            player_hp -= 5
+            player_hp -= 50
             print("スライムの反撃！５ダメージ！")
             print("勇者のHP: " + str(player_hp))
-            
+
+        if player_hp == 0:
+            print("勇者は倒れた...")
+            break    
     elif action == "2":
         print("勇者は逃げ出した‼")
         break
